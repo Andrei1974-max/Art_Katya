@@ -1,0 +1,24 @@
+Корень сайта/
+│
+├── index.html
+├── catalog.html
+├── portfolio.html
+├── about.html
+├── delivery.html
+├── contacts.html
+│
+└── assets/
+    ├── css/
+    │   └── style.css          <-- Все стили здесь
+    │
+    ├── js/
+    │   └── script.js          <-- JS (если понадобится)
+    │
+    ├── img/
+    │   ├── hero-bg.jpg        <-- Все картинки здесь
+    │   ├── artist-photo.jpg
+    │   ├── painting-1.jpg
+    │   └── ...
+    │
+    └── video/
+        └── (если будут видео)
