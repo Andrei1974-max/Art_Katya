@@ -3,84 +3,255 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Художница | Главная</title>
-    <!-- Путь к CSS теперь через assets/ -->
+    <meta
+      name="description"
+      content="Авторская живопись — картины, портфолио и работы на заказ."
+    />
+    <title>Екатерина Бальникова — художница</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="main-header">
-      <div class="container main-nav">
-        <div class="logo">Имя <span>Художницы</span></div>
-        <nav class="nav-links">
-          <a href="index.html" class="active">Главная</a>
-          <a href="catalog.html">Каталог</a>
-          <a href="portfolio.html">Портфолио</a>
-          <a href="about.html">О художнице</a>
-          <a href="delivery.html">Доставка</a>
-          <a href="contacts.html">Контакты</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img
+            class="brand-logo"
+            src="assets/img/Gemini_Generated.webp"
+            alt="Екатерина Бальникова — художница"
+            width="260"
+            height="56"
+          />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="main-menu" id="main-menu">
+          <a class="active" href="index.html">Главная</a
+          ><a href="gallery.html">Портфолио</a><a href="catalog.html">Каталог</a
+          ><a href="about.html">О художнице</a
+          ><a href="delivery.html">Доставка</a
+          ><a href="contacts.html">Контакты</a>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-overlay">
-        <h1>Искусство в каждой детали</h1>
-        <p>
-          Картины, написанные с душой. Уют, цвет и вдохновение для вашего дома.
-        </p>
-        <a href="catalog.html" class="btn">Смотреть работы</a>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="container about-grid">
-        <div class="about-img">
-          <!-- Картинка теперь через assets/img/ -->
-          <img src="assets/img/artist-photo.jpg" alt="Фото художницы" />
-        </div>
-        <div class="about-text">
-          <h2>О художнице</h2>
-          <p>Меня зовут [Имя]. Я пишу картины уже более [X] лет.</p>
-          <p>Моя главная страсть — пейзажи и городские зарисовки.</p>
-          <a href="about.html" class="btn">Узнать больше</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2 class="section-title">Избранные работы</h2>
-        <div class="art-grid">
-          <div class="art-card">
-            <img src="assets/img/painting-1.jpg" alt="Картина" />
-            <div class="art-info">
-              <h3>Название</h3>
-              <p>Масло, холст</p>
-            </div>
+    <main>
+      <!-- ===== HERO: полноэкранный слайдер ===== -->
+      <section class="hero-full">
+        <div class="hero-slider">
+          <div class="hero-slide is-active">
+            <img src="assets/img/Picture/1.webp" alt="" />
           </div>
-          <div class="art-card">
-            <img src="assets/img/painting-2.jpg" alt="Картина" />
-            <div class="art-info">
-              <h3>Название</h3>
-              <p>Акрил, холст</p>
-            </div>
+          <div class="hero-slide">
+            <img src="assets/img/Picture/2.webp" alt="" />
           </div>
-          <div class="art-card">
-            <img src="assets/img/painting-3.jpg" alt="Картина" />
-            <div class="art-info">
-              <h3>Название</h3>
-              <p>Графика</p>
-            </div>
+          <div class="hero-slide">
+            <img src="assets/img/Picture/3.webp" alt="" />
+          </div>
+          <div class="hero-slide">
+            <img src="assets/img/Picture/4.webp" alt="" />
+          </div>
+
+          <div class="hero-overlay">
+            <p class="eyebrow">Авторская живопись</p>
+            <h1>Искусство,<br />к которому хочется возвращаться</h1>
+            <a class="text-link light" href="catalog.html"
+              >Смотреть работы <span>→</span></a
+            >
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2026 Имя Художницы. Все права защищены.</p>
-        <p><a href="mailto:email@artist.com">email@artist.com</a></p>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Избранное</p>
+              <h2>Последние работы</h2>
+            </div>
+            <a class="text-link desktop-link" href="gallery.html"
+              >Все работы <span>→</span></a
+            >
+          </div>
+
+          <div class="art-grid">
+            <article class="art-item reveal">
+              <button
+                class="art-image-button"
+                type="button"
+                data-full="assets/img/Picture/1.webp"
+                data-title="Тишина над водой"
+                data-meta="Масло, холст"
+              >
+                <img
+                  src="assets/img/Picture/1.webp"
+                  alt="Тишина над водой — масло, холст"
+                  loading="lazy"
+                />
+                <span class="view-label">Увеличить</span>
+              </button>
+              <div class="art-info">
+                <h3>Тишина над водой</h3>
+                <p>Масло, холст</p>
+              </div>
+            </article>
+
+            <article class="art-item reveal">
+              <button
+                class="art-image-button"
+                type="button"
+                data-full="assets/img/Picture/2.webp"
+                data-title="Путь к горизонту"
+                data-meta="Акрил, холст"
+              >
+                <img
+                  src="assets/img/Picture/2.webp"
+                  alt="Путь к горизонту — акрил, холст"
+                  loading="lazy"
+                />
+                <span class="view-label">Увеличить</span>
+              </button>
+              <div class="art-info">
+                <h3>Путь к горизонту</h3>
+                <p>Акрил, холст</p>
+              </div>
+            </article>
+
+            <article class="art-item reveal">
+              <button
+                class="art-image-button"
+                type="button"
+                data-full="assets/img/Picture/4.webp"
+                data-title="Отражения дождя"
+                data-meta="Графика"
+              >
+                <img
+                  src="assets/img/Picture/4.webp"
+                  alt="Отражения дождя — графика"
+                  loading="lazy"
+                />
+                <span class="view-label">Увеличить</span>
+              </button>
+              <div class="art-info">
+                <h3>Отражения дождя</h3>
+                <p>Графика</p>
+              </div>
+            </article>
+          </div>
+
+          <a class="text-link mobile-link" href="gallery.html"
+            >Все работы <span>→</span></a
+          >
+        </div>
+      </section>
+
+      <section class="section about-section">
+        <div class="container about-layout">
+          <div class="about-photo reveal">
+            <img
+              src="assets/img/Katia/ChatGPT.webp"
+              alt="Екатерина Бальникова"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="eyebrow">О художнице</p>
+            <h2>Я пишу то,<br />что хочется сохранить</h2>
+            <p>
+              Свет в окне вечером. Тишину после дождя. Город, который неожиданно
+              становится красивым. Природу, к которой хочется возвращаться.
+            </p>
+            <p>
+              В каждой работе для меня важны настроение, цвет и то чувство,
+              которое остаётся у человека после встречи с картиной.
+            </p>
+            <a class="text-link" href="about.html"
+              >Узнать больше <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="container narrow">
+          <p class="eyebrow">Связаться</p>
+          <h2>Понравилась работа?</h2>
+          <p>
+            Напишите мне — расскажу о картине, наличии и возможности заказа.
+          </p>
+          <a class="outline-link" href="contacts.html"
+            >Связаться с художницей</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-name">Екатерина Бальникова</div>
+          <div class="footer-note">Авторская живопись</div>
+        </div>
+        <div class="footer-contact">
+          <a href="tel:+375445344042">
+            <svg
+              viewBox="0 0 24 24"
+              width="14"
+              height="14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            +375 44 534-40-42
+          </a>
+          <a href="mailto:5554115K@gmail.com">
+            <svg
+              viewBox="0 0 24 24"
+              width="14"
+              height="14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+            5554115K@gmail.com
+          </a>
+          <span>© 2026</span>
+        </div>
       </div>
     </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Закрыть">
+        ×
+      </button>
+      <div class="lightbox-content" role="dialog" aria-modal="true">
+        <img id="lightbox-image" src="" alt="" />
+        <div class="lightbox-caption">
+          <strong id="lightbox-title"></strong>
+          <span id="lightbox-meta"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

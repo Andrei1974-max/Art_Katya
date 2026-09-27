@@ -3,120 +3,188 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Каталог | Имя Художницы</title>
+    <title>Каталог | Екатерина Бальникова</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header class="main-header">
-      <div class="container main-nav">
-        <div class="logo">Имя <span>Художницы</span></div>
-        <nav class="nav-links">
-          <a href="index.html">Главная</a>
-          <a href="catalog.html" class="active">Каталог</a>
-          <a href="gallery.html">Портфолио</a>
-          <a href="about.html">О художнице</a>
-          <a href="delivery.html">Доставка</a>
-          <a href="contacts.html">Контакты</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img
+            class="brand-logo"
+            src="assets/img/Gemini_Generated.webp"
+            alt="Екатерина Бальникова — художница"
+            width="260"
+            height="56"
+          />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="main-menu" id="main-menu">
+          <a href="index.html">Главная</a
+          ><a class="active" href="gallery.html">Портфолио</a
+          ><a href="catalog.html">Каталог</a><a href="about.html">О художнице</a
+          ><a href="delivery.html">Доставка</a
+          ><a href="contacts.html">Контакты</a>
         </nav>
       </div>
     </header>
 
-    <section class="catalog-header">
-      <div class="container">
-        <h1 class="section-title">Каталог с ценами</h1>
-      </div>
-    </section>
+    <main>
+      <section class="page-intro">
+        <div class="container">
+          <p class="eyebrow">Каталог</p>
+          <h1>Картины в наличии</h1>
+          <p class="intro-text">
+            Авторские работы. Для уточнения наличия, размера и условий заказа
+            напишите художнице.
+          </p>
+        </div>
+      </section>
 
-    <section>
-      <div class="container">
-        <div class="art-grid">
-          <!-- Карточка 1 -->
-          <div class="art-card">
-            <img src="img/painting-1.jpg" alt="Картина 1" />
-            <div class="art-info">
-              <h3>Название картины</h3>
-              <p>Масло, холст | 50x70 см</p>
-              <span class="art-price">35 000 руб.</span>
-              <br />
-              <a
-                href="contacts.html"
-                class="btn"
-                style="
-                  margin-top: 10px;
-                  display: inline-block;
-                  padding: 8px 20px;
-                  border: 1px solid var(--color-accent);
-                  border-radius: 30px;
-                  color: var(--color-accent);
-                  font-size: 0.9rem;
-                "
-                >Узнать о наличии</a
+      <section class="section">
+        <div class="container">
+          <div class="catalog-grid">
+            <article class="catalog-item reveal">
+              <button
+                class="art-image-button"
+                type="button"
+                data-full="assets/img/Picture/7.webp"
+                data-title="Шёпот штормового берега"
+                data-meta="Масло, холст · 50 × 70 см"
               >
-            </div>
-          </div>
+                <img
+                  src="assets/img/Picture/7.webp"
+                  alt="Шёпот штормового берега"
+                  loading="lazy"
+                /><span class="view-label">Увеличить</span>
+              </button>
+              <div class="catalog-info">
+                <h2>Шёпот штормового берега</h2>
+                <p>Масло, холст · 50 × 70 см</p>
+                <strong>35 000 руб.</strong
+                ><a class="outline-link" href="contacts.html"
+                  >Узнать о наличии</a
+                >
+              </div>
+            </article>
 
-          <!-- Карточка 2 -->
-          <div class="art-card">
-            <img src="img/painting-2.jpg" alt="Картина 2" />
-            <div class="art-info">
-              <h3>Название картины</h3>
-              <p>Акрил, холст | 40x60 см</p>
-              <span class="art-price">40 000 руб.</span>
-              <br />
-              <a
-                href="contacts.html"
-                class="btn"
-                style="
-                  margin-top: 10px;
-                  display: inline-block;
-                  padding: 8px 20px;
-                  border: 1px solid var(--color-accent);
-                  border-radius: 30px;
-                  color: var(--color-accent);
-                  font-size: 0.9rem;
-                "
-                >Узнать о наличии</a
+            <article class="catalog-item reveal">
+              <button
+                class="art-image-button"
+                type="button"
+                data-full="assets/img/Picture/8.webp"
+                data-title="Отражения двух сердец"
+                data-meta="Акрил, холст · 40 × 60 см"
               >
-            </div>
-          </div>
+                <img
+                  src="assets/img/Picture/8.webp"
+                  alt="Отражения двух сердец"
+                  loading="lazy"
+                /><span class="view-label">Увеличить</span>
+              </button>
+              <div class="catalog-info">
+                <h2>Отражения двух сердец</h2>
+                <p>Акрил, холст · 40 × 60 см</p>
+                <strong>40 000 руб.</strong
+                ><a class="outline-link" href="contacts.html"
+                  >Узнать о наличии</a
+                >
+              </div>
+            </article>
 
-          <!-- Карточка 3 -->
-          <div class="art-card">
-            <img src="img/painting-3.jpg" alt="Картина 3" />
-            <div class="art-info">
-              <h3>Название картины</h3>
-              <p>Графика</p>
-              <span class="art-price">15 000 руб.</span>
-              <br />
-              <a
-                href="contacts.html"
-                class="btn"
-                style="
-                  margin-top: 10px;
-                  display: inline-block;
-                  padding: 8px 20px;
-                  border: 1px solid var(--color-accent);
-                  border-radius: 30px;
-                  color: var(--color-accent);
-                  font-size: 0.9rem;
-                "
-                >Узнать о наличии</a
+            <article class="catalog-item reveal">
+              <button
+                class="art-image-button"
+                type="button"
+                data-full="assets/img/Picture/9.webp"
+                data-title="Там, где рождается тишина"
+                data-meta="Графика"
               >
-            </div>
+                <img
+                  src="assets/img/Picture/9.webp"
+                  alt="Там, где рождается тишина"
+                  loading="lazy"
+                /><span class="view-label">Увеличить</span>
+              </button>
+              <div class="catalog-info">
+                <h2>Там, где рождается тишина</h2>
+                <p>Графика</p>
+                <strong>15 000 руб.</strong
+                ><a class="outline-link" href="contacts.html"
+                  >Узнать о наличии</a
+                >
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2026 Имя Художницы. Все права защищены.</p>
-        <p><a href="mailto:email@artist.com">email@artist.com</a></p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-name">Екатерина Бальникова</div>
+          <div class="footer-note">Авторская живопись</div>
+        </div>
+        <div class="footer-contact">
+          <a href="tel:+375445344042">
+            <svg
+              viewBox="0 0 24 24"
+              width="14"
+              height="14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            +375 44 534-40-42
+          </a>
+          <a href="mailto:5554115K@gmail.com">
+            <svg
+              viewBox="0 0 24 24"
+              width="14"
+              height="14"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+            5554115K@gmail.com
+          </a>
+          <span>© 2026</span>
+        </div>
       </div>
     </footer>
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Закрыть">
+        ×
+      </button>
+      <div class="lightbox-content" role="dialog" aria-modal="true">
+        <img id="lightbox-image" src="" alt="" />
+        <div class="lightbox-caption">
+          <strong id="lightbox-title"></strong><span id="lightbox-meta"></span>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
